@@ -46,7 +46,7 @@ class ClientDetails extends Component {
     const { showBalanceUpdate, balanceUpdateAmount } = this.state;
 
     let balanceForm = '';
-    // if balance form sould display
+    // if balance form should display
     if(showBalanceUpdate) {
       balanceForm = (
         <form onSubmit={this.balanceSubmit}>

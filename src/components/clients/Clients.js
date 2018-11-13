@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { firestoreConnect } from 'react-redux-firebase';
-import Spinner from '../layout/loading/Spinner'
+import Spinner from '../layout/loading/Spinner';
+import classnames from 'classnames';
 
 class Clients extends Component {
   state = {
@@ -41,9 +42,12 @@ class Clients extends Component {
               </h2>
             </div>
             <div className="col-md-6">
-              <h5 className="text-right text-secondary">
-                Total Owed{' '}
-                <span className="text-primary">
+              <h5 className="text-right balance-text">
+                Total Owed:{' '}
+                <span className={classnames({
+                  'text-danger': parseFloat(totalOwed.toFixed(2)) > 0,
+                  'text-success': parseFloat(totalOwed.toFixed(2)) === 0
+                })}>
                    ${parseFloat(totalOwed.toFixed(2))}
                 </span>
               </h5>

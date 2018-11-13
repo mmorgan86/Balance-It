@@ -1,0 +1,75 @@
+/*               FONTS
+============================================
+font-family: 'Abril Fatface', cursive;
+font-family: 'Exo', sans-serif;
+=============================================
+*/
+
+/*               SITE-COLORS
+============================================
+DARK BLUE: #324376
+YELLOWISH: #f5dd90
+MEDIUM BLUE: #586ba4
+OFF WHITE: #fcf7ff
+=============================================
+*/
+
+/* navbar */
+#navbar {
+  background-color: #324376;
+}
+
+.navbar-brand {
+  color: #f5dd90;
+  letter-spacing: 0.1em;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 30px;
+  text-decoration: none;
+}
+.navbar-brand:hover {
+  color: #f5dd90;
+  cursor: text;
+}
+
+.nav-link {
+  color: #f5dd90;
+  font-family: 'Exo', sans-serif;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #fcf7ff;
+}
+
+.nav-item #email:hover {
+  text-decoration: none !important;
+}
+
+/* Login */
+.text-primary {
+  color: #586ba4 !important;
+}
+
+.btn-primary {
+  background-color: #586ba4 !important;
+}
+
+.btn-link {
+  color: #324376 !important;
+}
+
+/* add new btn */
+.btn-success {
+  background-color: #c4cad0 !important;
+  color: #fcf7ff;
+  border: 1px solid #324376 !important;
+}
+
+.btn-success:hover,
+.btn-success:active {
+  transform: scale(1.1);
+}
+
+.balance-text {
+  color: #324376;
+}
